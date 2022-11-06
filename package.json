@@ -17,6 +17,14 @@
       "theme": "dark"
   },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TanJiaSheng/Magic-Box-Snippets-VSCode/issues",
+    "email": "tjs_95@163.com"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/TanJiaSheng/Magic-Box-Snippets-VSCode.git"
+  },
   "contributes": {
     "snippets": [
       {
