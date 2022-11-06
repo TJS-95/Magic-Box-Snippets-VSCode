@@ -1,0 +1,48 @@
+{
+  "name": "magicbox-snippets",
+  "displayName": "MagicBox-Snippets",
+  "description": "Code snippets for MagicBox which is a Vue.js 2.0 UI Toolkit for Web",
+  "version": "0.0.1",
+  "author": {
+    "name": "TanJiaSheng"
+  },
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "galleryBanner": {
+      "color": "#549BFF",
+      "theme": "dark"
+  },
+  "license": "MIT",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/magic-box.code-snippets"
+      }, 
+      {
+        "language": "html",
+        "path": "./snippets/magic-box.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/magic-box.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/magic-box.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/attributes.code-snippets"
+      }
+    ]
+  }
+}
