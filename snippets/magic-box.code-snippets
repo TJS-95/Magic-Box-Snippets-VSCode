@@ -1,34 +1,32 @@
 {
     "Basic: Layout bk-row": {
-        "prefix": "bkrow",
+        "prefix": ["bkrow", "bk-row"],
         "body": [
             "<bk-row :gutter=\"${1:20}\">",
                 "\t<bk-col :span=\"${2:12}\" :offset=\"${3:0}\">${4}</bk-col>",
                 "\t<bk-col :span=\"${5:12}\" :offset=\"${6:0}\">${7}</bk-col>",
-            "</bk-row>",
-            "${8}"
+            "</bk-row>"
         ],
         "description": "Magic Box <bk-row> with <bk-col>"
     },
 
     "Basic: Layout bk-col": {
-        "prefix": "bkcol",
+        "prefix": ["bkcol", "bk-col"],
         "body": [
-            "<bk-col :span=\"${1}\" :offset=\"${2:0}\">${3}</bk-col>",
-            "${4}"
+            "<bk-col :span=\"${1}\" :offset=\"${2:0}\">${3}</bk-col>"
         ],
         "description": "Magic Box <bk-col>"
     },
 
     "Basic: Color primary": {
-        "prefix": "bkcpr",
+        "prefix": ["bkcpr", "bk-color-primary"],
         "body": ["#1272FF"],
         "description": "Magic Box Color Primary"
     },
 
     "Basic: Color danger": {
-        "prefix": "bkcd",
-        "body": [" #FF9214"],
+        "prefix":[ "bkcd", "bk-color-danger"],
+        "body": ["#FF9214"],
         "description": "Magic Box Color Danger"
     },
 
@@ -69,52 +67,48 @@
     },
 
     "Basic: Border Light Shadow": {
-        "prefix": "bkbls",
+        "prefix": ["bkbls", "bk-box-shadow"],
         "body": ["box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);"],
         "description": "Magic Box Border Light Shadow"
     },
 
     "Basic: Icon": {
-        "prefix": "bkicon",
+        "prefix": ["bkicon", "bk-icon"],
         "body": [
-            "<bk-icon type=\"${1}\"></bk-icon>",
-            "${2}"
+            "<bk-icon type=\"${1}\"></bk-icon>"
         ],
         "description": "Magic Box <bk-icon>"
     },
 
     "Basic: Button": {
-        "prefix": "bkb",
+        "prefix": ["bkb", "bk-button"],
         "body": [
-            "<bk-button theme=\"${1|primary,default,success,warning,danger|}\" size=\"${2|normal,large,small,mini|}\" @click=\"$3\">${4}</bk-button>",
-            "${5}"
+            "<bk-button theme=\"${1|primary,default,success,warning,danger|}\" size=\"${2|normal,large,small,mini|}\" @click=\"$3\">${4}</bk-button>"
         ],
         "description": "Magic Box <bk-button>"
     },
 
     "Basic: Button Group": {
-        "prefix": "bkbg",
+        "prefix": ["bkbg", "bk-button-group"],
         "body": [
             "<div class=\"bk-button-group\">",
                 "\t<bk-button theme=\"${1|primary,default,success,warning,danger|}\" size=\"${2|normal,large,small,mini|}\" class=\"${3:is-selected}\" @click=\"$4\">${5}</bk-button>",
                 "\t<bk-button theme=\"${6|primary,default,success,warning,danger|}\" size=\"${7|normal,large,small,mini|}\" class=\"${8}\" @click=\"$9\">${10}</bk-button>",
-            "</div>",
-            "${11}"
+            "</div>"
         ],
         "description": "Magic Box <bk-button> Group"
     },
 
     "Basic: Link": {
-        "prefix": "bkl",
+        "prefix": ["bkl", "bklink", "bk-link"],
         "body": [
             "<bk-link theme=\"${1|primary,success,warning,danger,default|}\" :underline=\"${2:false}\" href=\"${3}\" href=\"${4:_blank}\">${5}</bk-link>",
-            "${6}"
         ],
         "description": "Magic Box <bk-link>"
     },
 
     "Form: Radio": {
-        "prefix": "bkr",
+        "prefix": ["bkr", "bk-radio"],
         "body": [
             "<bk-radio v-model=\"${1}\" @change=\"${2}\">${3}</bk-radio>",
             "${4}"
@@ -123,7 +117,7 @@
     },
 
     "Form: Radio Group": {
-        "prefix": "bkrg",
+        "prefix": ["bkradiogroup", "bk-radio-group"],
         "body": [
             "<bk-radio-group v-model=\"$1\" name=\"$2\" @change=\"$3\">",
                 "\t<bk-radio v-for=\"${4:item} in ${5:items}\" :key=\"${4:item}.${6:key}\" :value=\"${4:item}.${7:value}\">",
@@ -136,125 +130,114 @@
     },
 
     "Form: Radio Button Group": {
-        "prefix": "bkrbg",
+        "prefix": ["bk-radio-group-button"],
         "body": [
             "<bk-radio-group v-model=\"$1\" @change=\"$2\">",
                 "\t<bk-radio-button v-for=\"${3:item} in ${4:items}\" :key=\"${3:item}.${5:key}\" :value=\"${3:item}.${6:value}\">",
                     "\t\t{{${3:item}.${7:title}}}",
                 "\t</bk-radio-button>",
-            "</bk-radio-group>",
-            "${8}"
+            "</bk-radio-group>"
         ],
         "description": "Magic Box <bk-radio-group> with <bk-radio-button>"
     },
 
 
     "Form: Radio Button": {
-        "prefix": "bkrb",
+        "prefix": ["bk-radio-button"],
         "body": [
-            "<bk-radio-button v-model=\"${1}\">${2}</bk-radio-button>",
-            "${3}"
+            "<bk-radio-button v-model=\"${1}\">${2}</bk-radio-button>"
         ],
         "description": "Magic Box <bk-radio>"
     },
 
     "Form: Checkbox": {
-        "prefix": "bkc",
+        "prefix": ["bkc", "bk-checkbox"],
         "body": [
             "<bk-checkbox v-model=\"${1}\" :indeterminate=\"${2:false}\" @change=\"${3}\">{{$4}}</bk-checkbox>",
-            "${5}"
         ],
         "description": "Magic Box <bk-checkbox>"
     },
 
     "Form: Checkbox Group": {
-        "prefix": "bkcg",
+        "prefix": ["bkcg", "bk-checkbox-group"],
         "body": [
             "<bk-checkbox-group v-model=\"$1\" @change=\"${2}\">",
                 "\t<bk-checkbox v-for=\"${3:item} in ${4:items}\" :key=\"${3:item}.${5:key}\" :value=\"${3:item}.${6:value}\">",
                     "\t\t{{${3:item}.${7:label}}}",
                 "\t</bk-checkbox>",
-            "</bk-checkbox-group>",
-            "${8}"
+            "</bk-checkbox-group>"
         ],
         "description": "Magic Box <bk-checkbox-group> with <bk-checkbox>"
     },
 
     "Form: Checkbox Button Group": {
-        "prefix": "bkcbg",
+        "prefix": ["bkcbg", "bk-checkbox-group"],
         "body": [
             "<bk-checkbox-group v-model=\"$1\"  @change=\"${2}\">",
                 "\t<bk-checkbox-button v-for=\"${3:item} in ${4:items}\" :key=\"${3:item}.${5:key}\" :value=\"${3:item}.${6:value}\">",
                     "\t\t{{${3:item}.${7:label}}}",
                 "\t</bk-checkbox-button>",
-            "</bk-checkbox-group>",
-            "${8}"
+            "</bk-checkbox-group>"
         ],
         "description": "Magic Box <bk-checkbox-group> with <bk-checkbox-button>"
     },
 
     "Form: Checkbox Button": {
-        "prefix": "bkcbt",
+        "prefix": ["bkcbt", "bk-checkbox-button"],
         "body": [
-            "<bk-checkbox-button v-model=\"${1}\" value=\"${2}\" :indeterminate=\"${3:false}\" @change=\"${4}\">{{$5}}</bk-checkbox-button>",
-            "${6}"
+            "<bk-checkbox-button v-model=\"${1}\" value=\"${2}\" :indeterminate=\"${3:false}\" @change=\"${4}\">{{$5}}</bk-checkbox-button>"
         ],
         "description": "Magic Box <bk-checkbox-button>"
     },
 
     "Form: Input": {
-        "prefix": "bki",
+        "prefix": ["bki", "bk-input"],
         "body": [
-            "<bk-input v-model=\"$1\" placeholder=\"$2\" size=\"${3|small,large|}\" clearable @change=\"$4\">$5</bk-input>",
-            "${6}"
+            "<bk-input v-model=\"$1\" placeholder=\"$2\" clearable @change=\"$3\">$4</bk-input>"
         ],
         "description": "Magic Box <bk-input>"
     },
 
     "Form: Textarea": {
-        "prefix": "bkit",
+        "prefix": ["bkit", "bk-input:type"],
         "body": [
-            "<bk-input type=\"${1|text,textarea|}\" :rows=\"${2:2}\" v-model=\"$3\" placeholder=\"$4\" ",
+            "<bk-input v-model=\"$3\" type=\"${1|textarea,text|number}\" placeholder=\"$4\" ",
                 "\t:maxlength=\"${5:-1}\" size=\"${6|small,large|}\">",
-            "</bk-input>",
-            "${7}"
+            "</bk-input>"
         ],
         "description": "Magic Box <bk-input type=\"text,textarea\">"
     },
 
     "Form: Input Slot": {
-        "prefix": "bkis",
+        "prefix": ["bk-input>slot"],
         "body": [
-            "<template slot=\"${1|prepend,append|}\">$2</template>",
-            "${3}"
+            "<template slot=\"${1|prepend,append|}\">$2</template>"
         ],
         "description": "Magic Box <template slot=''>"
     },
 
     "Form: InputNumber": {
-        "prefix": "bkin",
+        "prefix": ["bkin", "bk-input-number"],
         "body": [
             "<bk-input v-model=\"$1\" type=\"number\" size=\"${2|small,large|}\"",
                 ":show-controls=\"${3|true,false|}\" @step=\"$4\">",
-            "</bk-input>",
-            "${5}"
+            "</bk-input>"
         ],
         "description": "Magic Box <bk-input>"
     },
 
     "Form: Tag Input": {
-        "prefix": "bkti",
+        "prefix": ["bkti", "bk-tag-input"],
         "body": [
             "<bk-tag-input v-model=\"$1\" :list=\"${2:list}\" trigger=\"${3|search,focus|}\"",
                 "\tclearable placeholder=\"$3\">",
-            "</bk-tag-input>",
-            "${4}"
+            "</bk-tag-input>"
         ],
         "description": "Magic Box <bk-tag-input>"
     },
 
     "Form: Select": {
-        "prefix": "bksel",
+        "prefix": ["bksel", "bk-select"],
         "body": [
             "<bk-select v-model=\"$1\" clearable searchable placeholder=\"$2\" @change=\"$3\">",
                 "\t<bk-option v-for=\"${4:item} in ${5:options}\"",
@@ -262,14 +245,13 @@
                     "\t\t:name=\"${4:item}.${7:name}\"",
                     "\t\t:id=\"${4:item}.${8:id}\">",
                 "\t</bk-option>",
-            "</bk-select>",
-            "${9}"
+            "</bk-select>"
         ],
         "description": "Magic Box <bk-select>"
     },
 
     "Form: Select Remote Search": {
-        "prefix": "bkselr",
+        "prefix": ["bkselr", "bk-select:remote"],
         "body": [
             "<bk-select v-model=\"$1\" placeholder=\"$2\" clearable filterable",
                 "\t:remote-method=\"$43\" :loading=\"$4\" @change=\"$5\">",
@@ -278,23 +260,21 @@
                     "\t\t:name=\"${6:item}.${9:name}\"",
                     "\t\t:id=\"${6:item}.${10:id}\">",
                 "\t</bk-option>",
-            "</bk-select>",
-            "${11}"
+            "</bk-select>"
         ],
         "description": "Magic Box <bk-select> remote"
     },
 
     "Form: Select Option": {
-        "prefix": "bkop",
+        "prefix": ["bkop", "bk-option"],
         "body": [
-            "<bk-option :key=\"$1\" :name=\"$2\" :id=\"$3\"></bk-option>",
-            "${3}"
+            "<bk-option :key=\"$1\" :name=\"$2\" :id=\"$3\"></bk-option>"
         ],
         "description": "Magic Box <bk-option>"
     },
 
     "Form: Select Option Group": {
-        "prefix": "bkopg",
+        "prefix": ["bkopg", "bk-option-group"],
         "body": [
             "<bk-option-group v-for=\"${1:group} in ${2:options}\"",
                 "\t:key=\"${1:group}.${3:value}\"",
@@ -304,82 +284,84 @@
                     "\t\t:name=\"${5:item}.${8:name}\"",
                     "\t\t:id=\"${5:item}.${9:id}\">",
                 "\t</bk-option>",
-            "<bk-option-group>",
-            "${10}"
+            "<bk-option-group>"
         ],
         "description": "Magic Box <bk-option-group>"
     },
 
     "Form: SearchSelect": {
-        "prefix": "bkssel",
+        "prefix": ["bkssel", "bk-search-select"],
         "body": [
-            "<bk-search-select v-model=\"$1\" :data=\"${2}\" clearable show-popover-tag-change></bk-search-select>",
-            "${3}"
+            "<bk-search-select v-model=\"$1\" :data=\"${2}\" clearable show-popover-tag-change></bk-search-select>"
         ],
         "description": "Magic Box <bk-search-select>"
     },
 
     "Form: SearchSelect Remote": {
-        "prefix": "bksselr",
+        "prefix": ["bksselr", "bk-search-select:remote"],
         "body": [
-            "<bk-search-select v-model=\"$1\" :data=\"${2}\" :remote-method=\"${3}\"></bk-search-select>",
-            "${4}"
+            "<bk-search-select v-model=\"$1\" :data=\"${2}\" :remote-method=\"${3}\"></bk-search-select>"
         ],
         "description": "Magic Box <bk-search-select> remote"
     },
 
     "Form: Cascade": {
-        "prefix": "bkca",
+        "prefix": ["bkca", "bk-cascade"],
         "body": [
             "<bk-cascade",
                 "\tv-model=\"${1}\"",
                 "\t:list=\"${2:list}\"",
                 "\tclearable",
                 "\tfilterable",
-                "\t:@change=\"$3\"",
-            "</bk-cascade>",
-            "${8}"
+                "\t@change=\"$3\"",
+            "</bk-cascade>"
         ],
         "description": "Magic Box <bk-cascade>"
     },
 
     "Form: Switcher": {
-        "prefix": "bksw",
+        "prefix": ["bksw", "bk-switcher"],
         "body": [
-            "<bk-switchr",
+            "<bk-switcher",
                 "\tv-model=\"$1\"",
                 "\t:true-value=\"${2:true}\"",
                 "\t:false-value=\"${3:false}\"",
                 "\t@change=\"$4\">",
-            "</bk-switchr>",
-            "${5}"
+            "</bk-switcher>"
         ],
         "description": "Magic Box <bk-switchr>"
     },
 
     "Form: ColorPicker": {
-        "prefix": "bkcp",
+        "prefix": ["bkcp", "bk-color-picker"],
         "body": [
-            "<bk-color-picker v-model=\"$1\" size=\"${2|large,medium,small|}\" :show-value=\"${3|true,false|}\" ></bk-color-picker>",
-            "${4}"
+            "<bk-color-picker v-model=\"$1\" size=\"${2|large,medium,small|}\" :show-value=\"${3|true,false|}\"></bk-color-picker>",
         ],
         "description": "Magic Box <bk-color-picker>"
     },
 
     "Form: Slider": {
-        "prefix": "bksl",
+        "prefix": ["bksl", "bk-slider"],
         "body": [
-            "<bk-slider v-model=\"$1\" :min-value=\"$2\" :max-value=\"$3\" :step=\"$4\" vertical=\"${5:false}\" @change=\"$6\">",
-            "</bk-slider>",
-            "${7}"
+            "<bk-slider",
+                "\tv-model=\"$1\"",
+                "\t:min-value=\"$2\"",
+                "\t:max-value=\"$3\"",
+                "\t:step=\"$4\"",
+                "\tvertical=\"${5:false}\"",
+                "\t@change=\"$6\">",
+            "</bk-slider>"
         ],
         "description": "Magic Box <bk-slider>"
     },
 
     "Form: DatePicker": {
-        "prefix": "bkdp",
+        "prefix": ["bkdp", "bk-date-picker"],
         "body": [
-            "<bk-date-picker v-model=\"$1\" type=\"${2|date,daterange,datetime,datetimerange,week,month,year|}\" placeholder=\"${3:选择日期时间}\">",
+            "<bk-date-picker",
+                "\tv-model=\"$1\"",
+                "\ttype=\"${2|date,daterange,datetime,datetimerange,week,month,year|}\"",
+                "\tplaceholder=\"${3:选择日期时间}\">",
             "</bk-date-picker>",
             "${4}"
         ],
@@ -387,65 +369,72 @@
     },
 
     "Form: DatePicker Range": {
-        "prefix": "bkdpr",
+        "prefix": ["bkdpr", "bk-date-picker:range"],
         "body": [
-            "<bk-date-picker v-model=\"$1\" type=\"${2:datetimerange}\" placeholder=\"${3:选择日期时间}\">",
-            "</bk-date-picker>",
-            "${4}"
+            "<bk-date-picker",
+                "\tv-model=\"$1\"",
+                "\ttype=\"${2:datetimerange}\"",
+                "\tplaceholder=\"${3:选择日期时间}\">",
+            "</bk-date-picker>"
         ],
         "description": "Magic Box <bk-date-picker> type=\"datetimerange\""
     },
 
     "Form: DatePicker Up To Now": {
-        "prefix": "bkdpup",
+        "prefix": ["bkdpup", "bk-date-picker:up"],
         "body": [
-            "<bk-date-picker v-model=\"$1\" type=\"${2|daterange,datetimerange|}\" up-to-now  placeholder=\"${3:选择日期时间}\">",
-            "</bk-date-picker>",
-            "${4}"
+            "<bk-date-picker",
+                "\tv-model=\"$1\"",
+                "\ttype=\"${2|daterange,datetimerange|}\"",
+                "\tup-to-now",
+                "\tplaceholder=\"${3:选择日期时间}\">",
+            "</bk-date-picker>"
         ],
         "description": "Magic Box <bk-date-picker> up-to-now"
     },
 
     "Form: TimePicker": {
-        "prefix": "bkdtp",
+        "prefix": ["bkdtp", "bk-time-picker"],
         "body": [
-            "<bk-time-picker v-model=\"$1\" type=\"time\" placeholder=\"${2:选择日期时间}\">",
-            "</bk-time-picker>",
-            "${3}"
+            "<bk-time-picker",
+                "\tv-model=\"$1\"",
+                "\ttype=\"time\"",
+                "\tplaceholder=\"${2:选择日期时间}\">",
+            "</bk-time-picker>"
         ],
         "description": "Magic Box <bk-time-picker type=\"time\">"
     },
 
     "Form: TimePicker Range": {
-        "prefix": "bkdtpr",
+        "prefix": ["bkdtpr", "bk-time-picker:timerange"],
         "body": [
-            "<bk-time-picker v-model=\"$1\" type=\"timerange\" placeholder=\"${2:选择时间范围\"",
-            "</bk-time-picker>",
-            "${3}"
+            "<bk-time-picker",
+                "\tv-model=\"$1\"",
+                "\ttype=\"timerange\"",
+                "\tplaceholder=\"${2:选择时间范围\"",
+            "</bk-time-picker>"
         ],
         "description": "Magic Box <bk-time-picker type=\"timerange\">"
     },
 
     "Form: Calendar": {
-        "prefix": "bkcal",
+        "prefix": ["bkcal", "bk-calendar"],
         "body": [
-            "<bk-calendar v-model=\"${1}\" :first-day-of-week=\"${2:1}\"></bk-calendar>",
-            "${4}"
+            "<bk-calendar v-model=\"${1}\" :first-day-of-week=\"${2:1}\"></bk-calendar>"
         ],
         "description": "Magic Box <bk-calendar>"
     },
 
     "Form: Almanac": {
-        "prefix": "bkalm",
+        "prefix": ["bkalm", "bk-almanac"],
         "body": [
-            "<bk-almanac v-model=\"${1}\" :year.sync=\"${2}\" :first-day-of-week=\"${3:1}\"></bk-almanac>",
-            "${4}"
+            "<bk-almanac v-model=\"${1}\" :year.sync=\"${2}\"></bk-almanac>"
         ],
         "description": "Magic Box <bk-almanac>"
     },
 
     "Form: Upload": {
-        "prefix": "bkup",
+        "prefix": ["bkup", "bk-upload"],
         "body": [
             "<bk-upload",
                 "\tv-model=\"$1\"",
@@ -472,16 +461,15 @@
     },
 
     "Form: Rate": {
-        "prefix": "bkrate",
+        "prefix": ["bkrate", "bk-rate"],
         "body": [
-            "<bk-rate :rate.sync=\"$1\" :edit=\"${2|true, false|}\" @score=\"$3\"></bk-rate>",
-            "${4}"
+            "<bk-rate :rate.sync=\"$1\" :edit=\"${2|true, false|}\" @score=\"$3\"></bk-rate>"
         ],
         "description": "Magic Box <bk-rate>"
     },
 
     "Form: Transfer": {
-        "prefix": "bktr",
+        "prefix": ["bktr", "bk-transfer"],
         "body": [
             "<bk-transfer",
                 "\tv-model=\"$1\"",
@@ -490,14 +478,13 @@
                 "\tdisplay-key=\"${5:name}\"",
                 "\tsetting-key=\"${6:id}\"",
                 "\t@change=\"$7\">",
-            "</bk-transfer>",
-            "${8}"
+            "</bk-transfer>"
         ],
         "description": "Magic Box <bk-transfer>"
     },
 
     "Form: Form": {
-        "prefix": "bkf",
+        "prefix": ["bkf", "bk-form"],
         "body": [
             "<bk-form",
                 "\t:model=\"${1:form}\"",
@@ -512,25 +499,33 @@
                     "\t\t<bk-button type=\"primary\" @click=\"onSubmit\">${8:提交}</bk-button>",
                     "\t\t<bk-button>${9:取消}</bk-button>",
                 "\t</bk-form-item>",
-            "</bk-form>",
-            "${10}"
+            "</bk-form>"
         ],
         "description": "Magic Box <bk-form>"
     },
 
     "Form: Form Item": {
-        "prefix": "bkfi",
+        "prefix": ["bkfi", "bk-form-item"],
         "body": [
             "<bk-form-item label=\"$1\" property=\"${2}\">",
                 "\t$3",
             "</bk-form-item>",
-            "${4}"
         ],
         "description": "Magic Box <bk-form-item>"
     },
 
+    "Form: Form Item Input": {
+        "prefix": ["bk-form-item>input"],
+        "body": [
+            "<bk-form-item label=\"$1\" property=\"${2}\">",
+                "\t<bk-input v-model=\"$3\" clearable></bk-input>",
+            "</bk-form-item>",
+        ],
+        "description": "Magic Box <bk-form-item> <bk-input/> </bk-form-item>"
+    },
+
     "Data: Table": {
-        "prefix": "bkt",
+        "prefix": ["bkt", "bk-table"],
         "body": [
             "<bk-table",
                 "\t:data=\"$1\"",
@@ -542,27 +537,25 @@
                     "\t\t:label=\"${2:col}.${5:label}\"",
                     "\t\t:width=\"${2:col}.${6:width}\">",
                 "\t</bk-table-column>",
-            "</bk-table>",
-            "${7}"
+            "</bk-table>"
         ],
         "description": "Magic Box <bk-table>"
     },
 
     "Data: Table Column": {
-        "prefix": "bktc",
+        "prefix": ["bktc", "bk-table-column"],
         "body": [
             "<bk-table-column",
                 "\t:prop=\"${1:col}.${2:id}\"",
                 "\t:label=\"${1:col}.${3:label}\"",
                 "\t:width=\"${1:col}.${4:width}\">",
-            "</bk-table-column>",
-            "${5}"
+            "</bk-table-column>"
         ],
         "description": "Magic Box <bk-table-column>"
     },
 
     "Data: Table Pagination": {
-        "prefix": "bktpage",
+        "prefix": ["bktpage", "bk-table:pagination"],
         "body": [
             "<bk-table",
                 "\t:data=\"$1\"",
@@ -580,64 +573,67 @@
             "</bk-table>",
             "${12}"
         ],
-        "description": "Magic Box <bk-table>"
+        "description": "Magic Box <bk-table> pagination"
     },
 
 
     "Data: Tag": {
-        "prefix": "bkta",
+        "prefix": ["bkta", "bk-tag"],
         "body": [
-            "<bk-tag theme=\"${1|danger,info,success,warning|}\" size=\"${2|medium,small,large|}\"  effect=\"${3|filled,stroke|}\" closable @close=\"${4}\">$5</bk-tag>",
-            "${6}"
+            "<bk-tag",
+                "\ttheme=\"${1|danger,info,success,warning|}\"",
+                "\tsize=\"${2|medium,small,large|}\"",
+                "\teffect=\"${3|filled,stroke|}\"",
+                "\tclosable",
+                "\t@close=\"${4}\">",
+                "\t$5",
+            "</bk-tag>"
         ],
         "description": "Magic Box <bk-tag>"
     },
 
     "Data: Progress": {
-        "prefix": "bkpr",
+        "prefix": ["bkpr", "bk-progress"],
         "body": [
             "<bk-progress",
                 "\ttheme=\"${1|primary,warning,success,danger|}\"",
                 "\t:percent=\"$2\"",
                 "\tsize=\"${3|small,normal,large|}\"",
                 "\t:color=\"${4}\">",
-            "</bk-progress>",
-            "${5}"
+            "</bk-progress>"
         ],
         "description": "Magic Box <bk-progress>"
     },
 
     "Data: RoundProgress": {
-        "prefix": "bkrpr",
+        "prefix": ["bkrpr", "bk-round-progress"],
         "body": [
             "<bk-round-progress",
                 "\ttitle=\"${1}\"",
                 "\t:width=\"${2:10}\"",
                 "\t:percent=\"${3}\"",
                 "\t:config=\"${4}\">",
-            "</bk-round-progress>",
-            "${5}"
+            "</bk-round-progress>"
         ],
         "description": "Magic Box <bk-round-progress>"
     },
 
     "Data: Tree": {
-        "prefix": "bktree",
+        "prefix": ["bktree", "bk-tree"],
         "body": [
             "<bk-tree",
-                "/tref=\"${1:tree}\"",
-                "/t:data=\"$2\"",
-                "/t:multiple=\"${3|false,true|}\"",
-                "/tnode-key=\"$4\"",
-                "/t@on-click=\"$5\">",
-            "</bk-tree>",
-            "${6}"
+                "\tref=\"${1:tree}\"",
+                "\t:data=\"$2\"",
+                "\t:multiple=\"${3|false,true|}\"",
+                "\tnode-key=\"$4\"",
+                "\t@on-click=\"$5\">",
+            "</bk-tree>"
         ],
         "description": "Magic Box <bk-tree>"
     },
 
     "Data: Big Tree": {
-        "prefix": "bkbtree",
+        "prefix": ["bkbtree", "bk-big-tree"],
         "body": [
             "<bk-big-tree",
                 "\tref=\"${1:tree}\"",
@@ -653,16 +649,15 @@
     },
 
     "Data: Timeline": {
-        "prefix": "bktl",
+        "prefix": ["bktl", "bk-timeline"],
         "body": [
-            "<bk-timeline :list=\"$1\" @select=\"$2\"></bk-timeline>",
-            "${3}"
+            "<bk-timeline :list=\"$1\" @select=\"$2\"></bk-timeline>"
         ],
         "description": "Magic Box <bk-timeline>"
     },
 
     "Data: Collapse": {
-        "prefix": "bkcolla",
+        "prefix": ["bkcolla", "bk-collapse"],
         "body": [
             "<bk-collapse v-model=\"${1:activeNames}\" :accordion=\"${2:false}\">",
                 "\t<bk-collapse-item",
@@ -674,35 +669,37 @@
                             "\t\t\t\t{{ ${4:item}.${8:content} }}",
                         "\t\t\t</div>",
                 "\t</bk-collapse-item>",
-            "</bk-collapse>",
-            "${9}"
+            "</bk-collapse>"
         ],
         "description": "Magic Box <bk-collapse> with <bk-collapse-item>"
     },
 
     "Data: Collapse Item": {
-        "prefix": "bkcollai",
+        "prefix": ["bkcollai", "bk-collapse-item"],
         "body": [
             "<bk-collapse-item :name=\"$1\">",
                 "\t${2:<!-- title -->}",
                 "\t<div slot=\"content\">${3:<!-- content -->}</div>",
-            "</bk-collapse-item>",
-            "${4}"
+            "</bk-collapse-item>"
         ],
         "description": "Magic Box <bk-collapse-item>"
     },
 
     "Data: Diff": {
-        "prefix": "bkdiff",
+        "prefix": ["bkdiff", "bk-diff"],
         "body": [
-            "<bk-diff :old-content=\"$1\" :new-content=\"$2\" language=\"${3:javascript}\" theme=\"${4|light,dark|}\"></bk-diff>",
-            "${5}"
+            "<bk-diff",
+                "\t:old-content=\"$1\"",
+                "\t:new-content=\"$2\"",
+                "\tlanguage=\"${3:javascript}\"",
+                "\ttheme=\"${4|light,dark|}\">",
+            "</bk-diff>"
         ],
         "description": "Magic Box <bk-diff>"
     },
 
     "Data: DropdownMenu": {
-        "prefix": "bkdm",
+        "prefix": ["bkdm", "bk-dropdown-menu"],
         "body": [
             "<bk-dropdown-menu",
                 "\tref=\"dropdown\"",
@@ -711,14 +708,13 @@
                 "\t<ul class=\"bk-dropdown-list\" slot=\"dropdown-content\">",
                     "\t\t<li><a href=\"javascript:;\" @click=\"$3\">${4:选项}</a></li>",
                 "\t</ul>",
-            "</bk-dropdown-menu>",
-            "${5}"
+            "</bk-dropdown-menu>"
         ],
         "description": "Magic Box <bk-dropdown-menu>"
     },
 
     "Data: Description": {
-        "prefix": "bkdesc",
+        "prefix": ["bkdesc", "bk-description"],
         "body": [
             "<bk-description",
                 "\t:column=\"$1\"",
@@ -731,14 +727,13 @@
                     "\t\t:span=\"${4:item}.${7:span}\">",
                     "\t\t{{ ${4:item}.${8:content} }}",
                 "\t</bk-description-item>",
-            "</bk-description>",
-            "${9}"
+            "</bk-description>"
         ],
         "description": "Magic Box <bk-description> with <bk-description-item>"
     },
 
     "Data: Description Item": {
-        "prefix": "bkdesci",
+        "prefix": ["bkdesci", "bk-description-item"],
         "body": [
             "<bk-description-item :label=\"$1\" :span=\"${2:1}\">",
                 "\t$3",
@@ -748,16 +743,15 @@
     },
 
     "Data: Swiper": {
-        "prefix": "bkswiper",
+        "prefix": ["bkswiper", "bk-swiper"],
         "body": [
-            "<bk-swiper :pics=\"$1\" :loop-time=\"${2:8000}\"></bk-swiper>",
-            "${3}"
+            "<bk-swiper :pics=\"$1\" :loop-time=\"${2:8000}\"></bk-swiper>"
         ],
         "description": "Magic Box <bk-swiper>"
     },
 
     "Data: Pagination": {
-        "prefix": "bkp",
+        "prefix": ["bkp", "bk-pagination"],
         "body": [
             "<bk-pagination",
                 "\t:current.sync=\"${1:pagination}.${2:current}\"",
@@ -766,61 +760,59 @@
                 "\t:limit-list=\"${5:[20, 40, 80, 100]}\"",
                 "\t@change=\"$6\"",
                 "\t@limit-change=\"$7\">",
-            "</bk-pagination>",
-            "${8}"
+            "</bk-pagination>"
         ],
         "description": "Magic Box <bk-pagination>"
     },
 
     "Data: Badge": {
-        "prefix": "bkba",
+        "prefix": ["bkba", "bk-badge"],
         "body": [
-            "<bk-badge :val=\"${1}\" :max=\"${2:99}\" :dot=\"${3|false,true|}\" theme=\"${4|primary,success,warning,danger,info|}\">",
+            "<bk-badge",
+                "\t:val=\"${1}\"",
+                "\t:max=\"${2:99}\"",
+                "\t:dot=\"${3|false,true|}\"",
+                "\ttheme=\"${4|primary,success,warning,danger,info|}\">",
                 "\t<bk-button size=\"small\">$5</bk-button>",
-            "</bk-badge>",
-            "${6}"
+            "</bk-badge>"
         ],
         "description": "Magic Box <bk-badge>"
     },
 
     "Data: AnimateNumber": {
-        "prefix": "bkan",
+        "prefix": ["bkan", "bk-animate-number"],
         "body": [
             "<bk-animate-number :value=\"$1\" :digits=\"${2:1}\"></bk-animate-number>",
-            "${3}"
         ],
         "description": "Magic Box <bk-animate-number>"
     },
 
     "Data: Image": {
-        "prefix": "bkim",
+        "prefix": ["bkim", "bk-image"],
         "body": [
             "<bk-image fit=\"${1|fill,contain,cover,none,scale-down|}\" src=\"$2\"></bk-image>",
-            "${3}"
         ],
         "description": "Magic Box <bk-image>"
     },
 
     "Data: Image Preview": {
-        "prefix": "bkimp",
+        "prefix": ["bkimp", "bk-image:preview"],
         "body": [
-            "<bk-image :src=\"$1\" :preview-src-list=\"$2\"></bk-image>",
-            "${3}"
+            "<bk-image :src=\"$1\" :preview-src-list=\"$2\"></bk-image>"
         ],
         "description": "Magic Box <bk-image> preview"
     },
 
     "Data: ZoomImage": {
-        "prefix": "bkzi",
+        "prefix": ["bkzi", "bk-zoom-image"],
         "body": [
-            "<bk-zoom-image src=\"$1\"></bk-zoom-image>",
-            "${2}"
+            "<bk-zoom-image src=\"$1\"></bk-zoom-image>"
         ],
         "description": "Magic Box <bk-zoom-image>"
     },
 
     "Data: VirtualScroll": {
-        "prefix": "bkvs",
+        "prefix": ["bkvs", "bk-virtual-scroll"],
         "body": [
             "<bk-virtual-scroll ref=\"$1\" :item-height=\"${2:16}\" :show-index=\"${3|false,true}\">",
                 "\t<template slot-scope=\"${4:item}\">",
@@ -833,24 +825,22 @@
     },
 
     "Notice: Alert": {
-        "prefix": "bkal",
+        "prefix": ["bkal", "bk-alert"],
         "body": [
-            "<bk-alert :title=\"$1\" type=\"${2|primary,success,warning,error|}\" show-icon closable></bk-alert>",
-            "${3}"
+            "<bk-alert :title=\"$1\" type=\"${2|primary,success,warning,error|}\" show-icon closable></bk-alert>"
         ],
         "description": "Magic Box <bk-alert>"
     },
     "Notice: Exception": {
-        "prefix": "bkex",
+        "prefix": ["bkex", "bk-exception"],
         "body": [
-            "<bk-exception type=\"${1|403,404,500,building,empty,search-empty|}\" scene=\"${2|page,part|}\"></bk-exception>",
-            "${3}"
+            "<bk-exception type=\"${1|403,404,500,building,empty,search-empty|}\" scene=\"${2|page,part|}\"></bk-exception>"
         ],
         "description": "Magic Box <bk-exception>"
     },
 
     "Notice: Popover": {
-        "prefix": "bkpo",
+        "prefix": ["bkpo", "bk-popover"],
         "body": [
             "<bk-popover",
                 "\t:ref=\"$1\"",
@@ -858,14 +848,13 @@
                 "\tcontent=\"$3\"",
                 "\twidth=\"$4\">",
                 "\t${5: <!-- <bk-button>content</bk-button> -->}",
-            "</bk-popover>",
-            "${6}"
+            "</bk-popover>"
         ],
         "description": "Magic Box <bk-popover>"
     },
 
     "Notice: Sideslider": {
-        "prefix": "bksides",
+        "prefix": ["bksides", "bk-sideslider"],
         "body": [
             "<bk-sideslider",
                 "\ttitle=\"${1}\"",
@@ -873,14 +862,13 @@
                 "\tdirection=\"${3|right,left|}\"",
                 "\twidth=\"${4:400}\">",
                 "\t${5:<!-- content -->}",
-            "</bk-sideslider>",
-            "${6}"
+            "</bk-sideslider>"
         ],
         "description": "Magic Box <bk-sideslider>"
     },
 
     "Notice: Popconfirm": {
-        "prefix": "bkpopc",
+        "prefix": ["bkpopc", "bk-popconfirm"],
         "body": [
             "<bk-popconfirm",
                 "\t:title=\"$1\"",
@@ -889,14 +877,13 @@
                 "\trigger=\"${4|click,focusin,mouseenter,mouseenter focus,}\"",
                 "\t@confirm=\"$5\">",
                 "\t${6: <!-- <bk-button>content</bk-button> -->}",
-            "</bk-popconfirm>",
-            "${7}"
+            "</bk-popconfirm>"
         ],
         "description": "Magic Box <bk-popconfirm>"
     },
 
     "Notice: Dialog": {
-        "prefix": "bkdi",
+        "prefix": ["bkdi", "bk-dialog"],
         "body": [
             "<bk-dialog",
                 "\tv-model=\"$1\"",
@@ -906,15 +893,14 @@
                 "\t:auto-close=\"${5|false,ture|}\"",
                 "\t@confirm=\"$6\"",
                 "\t@cancel=\"$7\">",
-                "\t${8:<!--content-->}",
-            "</bk-dialog>",
-            "${9}"
+                "\t${8}",
+            "</bk-dialog>"
         ],
         "description": "Magic Box <bk-dialog>"
     },
 
     "Notice: Tooltip": {
-        "prefix": "bkto",
+        "prefix": ["bkto", "bk-tooltip"],
         "body": [
             "<bk-tooltip content=\"$1\" placement=\"${2|top,top-start,top-end,bottom,bottom-start,bottom-end,left,left-start,left-end,right,right-start,right-end|}\" effect=\"${3|dark,light|}\">",
                 "\t${4:<!-- content to trigger tooltip here -->}",
@@ -925,7 +911,7 @@
     },
 
     "Notice: Card": {
-        "prefix": "bkcard",
+        "prefix": ["bkcard", "bk-card"],
         "body": [
             "<bk-card title=\"$1\" border=\"${2|true,false|}\">",
                 "\t<div slot=\"header\">",
@@ -939,16 +925,20 @@
     },
 
     "Notice: Spin": {
-        "prefix": "bkspin",
+        "prefix": ["bkspin", "bk-spin"],
         "body": [
-            "<bk-spin theme=\"${1|primary,success,warning,danger,info|}\" size=\"${2|small,large,normal,mini|}\" icon=\"$3\" :spinning=\"$4\"></bk-spin>",
-            "${5}"
+            "<bk-spin",
+                "\ttheme=\"${1|primary,success,warning,danger,info|}\"",
+                "\tsize=\"${2|small,large,normal,mini|}\"",
+                "\ticon=\"$3\"",
+                "\t:spinning=\"$4\">",
+            "</bk-spin>"
         ],
         "description": "Magic Box <bk-spin>"
     },
 
     "Navigation: ResizeLayout bk-resize-layout": {
-        "prefix": "bkrl",
+        "prefix": ["bkrl", "bk-resize-layout"],
         "body": [
             "<bk-resize-layout :placement=\"${1}\">",
                 "\t<div slot=\"${2:aside}\">aside</div>",
@@ -958,7 +948,7 @@
         "description": "Magic Box <bk-resize-layout>"
     },
     "Navigation: SimpleNav bk-simple-nav": {
-        "prefix": "bksn",
+        "prefix": ["bksn", "bk-simple-nav"],
         "body": [
             "<bk-simple-nav",
                 "\tside-title=\"${1}\"",
@@ -998,7 +988,7 @@
     },
 
     "Navigation: Tab": {
-        "prefix": "bktab",
+        "prefix": ["bktab", "bk-tab"],
         "body": [
             "<bk-tab :active.sync=\"$1\" type=\"${2|card,border-card,unborder-card,vertical-card|}\" tab-position=\"${3|top,left,right|}\" @tab-change=\"$4\">",
                 "\t<bk-tab-panel v-for=\"${5:item} in ${6:panes}\"",
@@ -1007,19 +997,17 @@
                     "\t\t:name=\"${5:item}.${7:key}\">",
                     "\t\t$9",
                 "\t</bk-tab-panel>",
-            "</bk-tab>",
-            "${10}"
+            "</bk-tab>"
         ],
         "description": "Magic Box <bk-tab> with <bk-tab-panel>"
     },
 
     "Navigation: Tabs tab panel": {
-        "prefix": "bktabp",
+        "prefix": ["bktabp", "bk-tab-panel"],
         "body": [
             "<bk-tab-panel :label=\"$1\" :name=\"$2\">",
                 "\t$3",
-            "</bk-tab-panel>",
-            "${4}"
+            "</bk-tab-panel>"
         ],
         "description": "Magic Box <bk-tab-panel>"
     },
@@ -1041,21 +1029,20 @@
     },
 
     "Navigation: Breadcrumb Item": {
-        "prefix": "bkbri",
+        "prefix": ["bkbri", "bk-breadcrumb-item"],
         "body": [
             "<bk-breadcrumb-item",
                     "\tv-for=\"(item, index) in list\"",
                     "\t:key=\"${1:index}\"",
                     "\t:to=\"{ path: '$2', name: '$3' }\">",
                         "\t$4",
-            "</bk-breadcrumb-item>",
-            "${5}"
+            "</bk-breadcrumb-item>"
         ],
         "description": "Magic Box <bk-breadcrumb-item>"
     },
 
     "Navigation: Steps": {
-        "prefix": "bksts",
+        "prefix": ["bksts", "bk-steps"],
         "body": [
             "<bk-steps",
                 "\t:cur-step=\"$1\"",
@@ -1064,14 +1051,13 @@
                 "\tstatus=\"${3}\"",
                 "\t@step-changed=\"${4}\">",
                 "\t${5}",
-            "</bk-steps>",
-            "${11}"
+            "</bk-steps>"
         ],
         "description": "Magic Box <bk-steps>"
     },
 
     "Navigation: Process": {
-        "prefix": "bkprocess",
+        "prefix": ["bkprocess", "bk-process"],
         "body": [
             "<bk-process",
                 "\t:list=\"$1\"",
@@ -1080,17 +1066,15 @@
                 "\t:controllable=\"${4:true}\"",
                 "\t@process-changed=\"${5}\">",
                 "\t${6}",
-            "</bk-process>",
-            "${11}"
+            "</bk-process>"
         ],
         "description": "Magic Box <bk-process>"
     },
 
     "Navigation: Divider": {
-        "prefix": "bkd",
+        "prefix": ["bkd", "bk-divider"],
         "body": [
-            "<bk-divider direction=\"${1|horizontal,vertical|}\" align=\"${2|left,right,center|}\">$3</bk-divider>",
-            "${4}"
+            "<bk-divider direction=\"${1|horizontal,vertical|}\" align=\"${2|left,right,center|}\">$3</bk-divider>"
         ],
         "description": "Magic Box <bk-divider>"
     },
@@ -1105,21 +1089,19 @@
     },
 
     "Navigation: BackTop": {
-        "prefix": "bkbtop",
+        "prefix": ["bkbtop", "bk-back-top"],
         "body": [
-            "<bk-back-top :left=\"${1:40}\" :bottom=\"${2:40}\" :target=\"$3\" :visibility-height=\"${4:200}\" ></bk-back-top>",
-            "${5}"
+            "<bk-back-top :left=\"${1:40}\" :bottom=\"${2:40}\" :target=\"$3\" :visibility-height=\"${4:200}\"></bk-back-top>"
         ],
         "description": "Magic Box <bk-back-top>"
     },
 
     "Navigation: Affix": {
-        "prefix": "bkaf",
+        "prefix": ["bkaf", "bk-affix"],
         "body": [
             "<bk-affix>",
                 "\t$1",
-            "</bk-affix>",
-            "${2}"
+            "</bk-affix>"
         ],
         "description": "Magic Box <bk-back-top>"
     }

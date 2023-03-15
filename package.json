@@ -2,7 +2,8 @@
   "name": "magicbox-snippets",
   "displayName": "MagicBox-Snippets",
   "description": "Code snippets for MagicBox which is a Vue.js 2.0 UI Toolkit for Web",
-  "version": "0.0.1",
+  "publisher": "ten",
+  "version": "0.0.3",
   "author": {
     "name": "TanJiaSheng"
   },

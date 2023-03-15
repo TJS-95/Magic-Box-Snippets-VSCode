@@ -1,6 +1,6 @@
 {
     "Notice: Loading Directive": {
-        "prefix": "bkvload",
+        "prefix": ["bkvload", "v-bkloading"],
         "body": [
             "v-bkloading=\"{ isLoading: $1,zIndex: ${2:10} }\""
         ],
@@ -8,7 +8,7 @@
     },
 
     "Notice: Loading": {
-        "prefix": "bkload",
+        "prefix": ["bkload"],
         "body": [
             ":is-loading=\"$1\""
         ],
@@ -16,7 +16,7 @@
     },
 
     "Notice: Tooltips": {
-        "prefix": "bktool",
+        "prefix": ["bktool", "v-bk-tooltips"],
         "body": [
             "v-bk-tooltips=\"{ content: '$1', showOnInit: '${2|true,false|}', placements: ['${3|auto,auto-start,auto-end,top-start,top,top-end,right-start,right,right-end,bottom-end,bottom,bottom-start,left-end,left,left-start|}'], trigger: '${5|mouseenter,mouseover,click| }'  }\""
         ],
@@ -24,7 +24,7 @@
     },
 
     "Notice: Tooltips with theme": {
-        "prefix": "bktoolt",
+        "prefix": ["bktoolt", "v-bk-tooltips.theme"],
         "body": [
             "v-bk-tooltips=\"{ content: '$1', theme: '${2|dark,light|}', showOnInit: '${3|true,false|}', placements: ['${4|auto,auto-start,auto-end,top-start,top,top-end,right-start,right,right-end,bottom-end,bottom,bottom-start,left-end,left,left-start|}'], trigger: '${5|mouseenter,mouseover,click|}' }\""
         ],
@@ -32,7 +32,7 @@
     },
 
     "Directive: Clickoutside": {
-        "prefix": "bkvcos",
+        "prefix": ["bkvcos", "v-bk-clickoutside"],
         "body": [
             "v-bk-clickoutside=\"$1\""
         ],
@@ -40,7 +40,7 @@
     },
 
     "Directive: Overflow Tips": {
-        "prefix": "bkvot",
+        "prefix": ["bkvot", "v-bk-overflow-tip"],
         "body": [
             "v-bk-overflow-tips"
         ],
@@ -48,7 +48,7 @@
     },
 
     "Directive: Copy": {
-        "prefix": "bkvcopy",
+        "prefix": ["bkvcopy", "v-bk-copy"],
         "body": [
             "v-bk-copy=\"$1\""
         ],

@@ -1,15 +1,14 @@
 {
     "Notice: Info": {
-        "prefix": "bkinfo",
+        "prefix": ["bkinfo"],
         "body": [
             "this.\\$bkInfo({",
                 "\ttitle: '$1',",
                 "\tsubTitle: '${2}',",
-                "\tshowFooter: true,",
                 "\tokText: '${3:确定}',",
                 "\tcancelText: '${4:取消}',",
                 "\tconfirmLoading: '${5|true,false|}',",
-                "\tconfirmFn: async () => {}",
+                "\tconfirmFn: async () => {},",
                 "\tcancelFn: () => {}",
             "})"
         ],
@@ -17,7 +16,7 @@
     },
 
     "Notice: Loading Method": {
-        "prefix": "bkload",
+        "prefix": ["bkload", "bkLoading"],
         "body": [
             "const h = this.\\$createElement",
             "",
@@ -40,55 +39,71 @@
     },
 
     "Notice: Message": {
-        "prefix": "bkme",
+        "prefix": ["bkMessage"],
         "body": [
             "this.\\$bkMessage({",
-                "\\title: '$1',",
+                "\ttitle: '$1',",
                 "\tmessage: '$2',",
-                "\tdismissable: ${3:true},",
-                "\tdelay: ${4:3000},",
-            "});",
+            "})",
             "${5}"
         ],
         "description": "Magic Box $bkMessage"
     },
 
+    "Notice: Message with theme success": {
+        "prefix": ["bkMessage.success"],
+        "body": [
+            "this.\\$bkMessage.success('$1')"
+        ],
+        "description": "Magic Box $bkMessage with theme success"
+    },
+
+    "Notice: Message with theme warning": {
+        "prefix": ["bkMessage.warning"],
+        "body": [
+            "this.\\$bkMessage.warning('$1')"
+        ],
+        "description": "Magic Box $bkMessage with theme warning"
+    },
+
+    "Notice: Message with theme error": {
+        "prefix": ["bkMessage.error"],
+        "body": [
+            "this.\\$bkMessage.error('$1')"
+        ],
+        "description": "Magic Box $bkMessage with theme error"
+    },
+
     "Notice: Message with theme": {
-        "prefix": "bkmet",
+        "prefix": ["bkMessage.theme"],
         "body": [
             "this.\\$bkMessage({",
-                "\\title: '$1',",
+                "\ttitle: '$1',",
                 "\tmessage: '$2',",
-                "\theme: '${3|primary,success,warning,error|}',",
-                "\tdismissable: ${4:true},",
-                "\tdelay: ${5:3000},",
-            "});",
-            "${6}"
+                "\ttheme: '${3|primary,success,warning,error|}'",
+            "})"
         ],
         "description": "Magic Box $bkMessage with theme"
     },
 
     "Notice: Notify": {
-        "prefix": "bkno",
+        "prefix": ["bkNotify"],
         "body": [
             "this.\\$bkNotify({",
-                "\\title: '$1',",
+                "\ttitle: '$1',",
                 "\tmessage: '$2',",
-                "\tdismissable: ${3:true},",
-                "\tdelay: ${4:5000},",
-            "});",
-            "${5}"
+            "});"
         ],
         "description": "Magic Box $Notify"
     },
 
     "Notice: Notify with theme": {
-        "prefix": "bknot",
+        "prefix": ["bkNotify.theme"],
         "body": [
             "this.\\$bkNotify({",
-                "\\title: '$1',",
+                "\ttitle: '$1',",
                 "\tmessage: '$2',",
-                "\theme: '${3|primary,success,warning,error|}',",
+                "\ttheme: '${3|primary,success,warning,error|}',",
                 "\tdismissable: ${4:true},",
                 "\tdelay: ${5:5000},",
             "});",
@@ -98,7 +113,7 @@
     },
 
     "Form: Form Validate method": {
-        "prefix": "bkfv",
+        "prefix": ["bkfv", "bk-from-Validate"],
         "body": [
             "this.\\$refs.${1:form}.validate().then(${2:validator} => {",
                 "\talert('验证成功！')",

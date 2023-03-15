@@ -29,134 +29,134 @@ Go to the [git](https://github.com/TJS-95/Magic-Box-Snippets-VSCode) and downloa
 
 |No.|Trigger&nbsp;Key|Element Tag|
 |:------:|:--------------:|:--------|
-|1. | `bkrow` | `<bk-row>` |
-|2. | `bkcol` | `<bk-col>` |
+|1. | `bk-row` | `<bk-row>` |
+|2. | `bk-col` | `<bk-col>` |
 |3. | `bkcpr` | `#1272FF` |
 |4. | `bkcd` | `#FF9214` |
 |5. | `bkcs` | `#27C274` |
 |6. | `bkcw` | `#FFC01F` |
 |7. | `bkcgery` | `#B2BDCC` |
-|8. | `bkb` | `<bk-button>` |
-|9. | `elbg` | `<bk-button-group>` |
-|10. | `bkl` | `<bk-link>` |
-|11. | `bkicon` | `<bk-icon>` |
+|8. | `bk-button` | `<bk-button>` |
+|9. | `bk-button-group` | `<bk-button-group>` |
+|10. | `bk-link` | `<bk-link>` |
+|11. | `bk-icon` | `<bk-icon>` |
 
 #### Form Part
 
 |No. |  Trigger&nbsp;Key | Element Tag|
 |:------:|:--------------:|:--------|
-|1. | `bkr` | `<bk-radio>` |
-|2. | `bkrg` | `<bk-radio-group>` |
-|3. | `bkrbg` | `<bk-radio-group> with <bk-radio-button>` |
-|4. | `bkrb` | `<bk-radio-button>` |
-|5. | `bkc` | `<bk-checkbox>` |
-|6. | `bkcg` | `<bk-checkbox-group>` |
-|9. | `bki` | `<bk-input>` |
-|10. | `bkit` | `<bk-input type="textarea">` |
-|11. | `bkti` | `<bk-tag-input>` |
-|12. | `bkis` | `<template slot=''>` |
-|13. | `bkin` | `<bk-input type="number">` |
-|14. | `bksel` | `<bk-select>` |
-|15. | `bkselr` | `<bk-select :remote-method="">` |
-|16. | `bkop` | `<bk-option>` |
-|17. | `bkopg` | `<bk-option-group>` |
-|18. | `bkssel` | `<bk-search-select>` |
-|19. | `bksselr` | `<bk-search-select :remote-method="">` |
-|20. | `bkca` | `<bk-cascade>`|
-|21. | `bksw` | `<bk-swtichr>` |
-|22. | `bkcp` | `<bk-color-picker>` |
-|23. | `bksl` | `<bk-slider>` |
-|24. | `bkdp` | `<bk-date-picker>` |
-|25. | `bkdpr` | `<bk-date-picker type="datetimerange">` |
-|26. | `bkdpup` | `<bk-date-picker up-to-now>` |
-|27. | `bkdtp` | `<bk-time-picker type="time">` |
-|28. | `bkdtpr` | `<bk-time-picker type="timerange">` |
-|29. | `bkcal` | `<bk-calendar>` |
-|30. | `bkalm` | `<bk-almanac>` |
-|31. | `bkup` | `<bk-upload>` |
-|32. | `bkra` | `<bk-rate>` |
-|33. | `bktr` | `<bk-transfer>` |
-|34. | `bkf` | `<bk-form>` |
-|35. | `bkfi` | `<bk-form-item>` |
+|1. | `bk-radio` | `<bk-radio>` |
+|2. | `bk-radio-group` | `<bk-radio-group>` |
+|3. | `bk-radio-group-button` | `<bk-radio-group> with <bk-radio-button>` |
+|4. | `bk-radio-button` | `<bk-radio-button>` |
+|5. | `bk-checkbox` | `<bk-checkbox>` |
+|6. | `bk-checkbox-group` | `<bk-checkbox-group>` |
+|9. | `bk-input` | `<bk-input>` |
+|10. | `bk-input:type` | `<bk-input type="textarea">` |
+|11. | `bk-tag-input` | `<bk-tag-input>` |
+|12. | `bk-input>slot` | `<template slot='prepend|append'>` |
+|13. | `bk-input-number` | `<bk-input type="number">` |
+|14. | `bk-select` | `<bk-select>` |
+|15. | `bk-select:remote` | `<bk-select :remote-method="">` |
+|16. | `bk-option` | `<bk-option>` |
+|17. | `<bk-option-group>` | `<bk-option-group>` |
+|18. | `bk-search-select` | `<bk-search-select>` |
+|19. | `bk-search-select:remote` | `<bk-search-select :remote-method="">` |
+|20. | `bk-cascade` | `<bk-cascade>`|
+|21. | `bk-switcher` | `<bk-switcher>` |
+|22. | `bk-color-picker` | `<bk-color-picker>` |
+|23. | `bk-slider` | `<bk-slider>` |
+|24. | `bk-date-picker` | `<bk-date-picker>` |
+|25. | `bk-date-picker:range` | `<bk-date-picker type="datetimerange">` |
+|26. | `bk-date-picker:up` | `<bk-date-picker up-to-now>` |
+|27. | `bk-time-picker` | `<bk-time-picker type="time">` |
+|28. | `bk-time-picker:timerange` | `<bk-time-picker type="timerange">` |
+|29. | `bk-calendar` | `<bk-calendar>` |
+|30. | `bk-almanac` | `<bk-almanac>` |
+|31. | `bk-upload` | `<bk-upload>` |
+|32. | `bk-rate` | `<bk-rate>` |
+|33. | `bk-transfer` | `<bk-transfer>` |
+|34. | `bk-form` | `<bk-form>` |
+|35. | `bk-form-item` | `<bk-form-item>` |
+|36. | `bk-form-item>input` | `<bk-form-item> <bk-input /> </bk-form-item>` |
 
 #### Data Part
 
 |No. |  Trigger Key | Element Tag|
 |:------:|:--------------:|:--------|
-|1. | `bkt` | `<bk-table>` |
-|2. | `bktc` | `<bk-table-column>` |
-|3. | `bktpage` | `<bk-table :pagination="">` |
-|3. | `bkta` | `<bk-tag>` |
-|4. | `bkpr` | `<bk-progress>` |
-|5. | `bkrpr` | `<bk-round-progress>` |
-|6. | `bktree` | `<bk-tree>` |
-|7. | `bktbree` | `<bk-big-tree>` |
-|8. | `bktl` | `<bk-timeline>` |
-|9. | `bkcolla` | `<bk-collapse>` |
-|10. | `bkcollai` | `<bk-collapse-item>` |
-|11. | `bkdiff` | `<bk-diff>` |
-|12. | `bkdm` | `<bk-dropdown>` |
-|13. | `bkdesc` | `<bk-description>` |
-|14. | `bkdesci` | `<bk-description-item>` |
-|15. | `bkswiper` | `<bk-swiper>` |
-|16. | `bkp` | `<bk-pagination>` |
-|17. | `bkba` | `<bk-badge>` |
-|18. | `bkan` | `<bk-animate-number>` |
-|19. | `bkim` | `<bk-image>` |
-|20. | `bkimp` | `<bk-image :preview-src-list="">` |
-|21. | `bkzi` | `<bk-zoom-image>` |
-|22. | `bkvs` | `<bk-virtual-scroll>` |
+|1. | `bk-table` | `<bk-table>` |
+|2. | `bk-table-column` | `<bk-table-column>` |
+|3. | `bk-table:pagination` | `<bk-table :pagination="">` |
+|3. | `bk-tag` | `<bk-tag>` |
+|4. | `bk-progress` | `<bk-progress>` |
+|5. | `bk-round-progress` | `<bk-round-progress>` |
+|6. | `bk-tree` | `<bk-tree>` |
+|7. | `bk-big-tree` | `<bk-big-tree>` |
+|8. | `bk-timeline` | `<bk-timeline>` |
+|9. | `bk-collapse` | `<bk-collapse>` |
+|10. | `bk-collapse-item` | `<bk-collapse-item>` |
+|11. | `bk-diff` | `<bk-diff>` |
+|12. | `bk-dropdown` | `<bk-dropdown>` |
+|13. | `bk-description` | `<bk-description>` |
+|14. | `bk-description-item` | `<bk-description-item>` |
+|15. | `bk-swiper` | `<bk-swiper>` |
+|16. | `bk-pagination` | `<bk-pagination>` |
+|17. | `bk-badge` | `<bk-badge>` |
+|18. | `bk-animate-number` | `<bk-animate-number>` |
+|19. | `bk-image` | `<bk-image>` |
+|20. | `bk-image:preview` | `<bk-image :preview-src-list="">` |
+|21. | `bk-zoom-image` | `<bk-zoom-image>` |
+|22. | `bk-virtual-scroll` | `<bk-virtual-scroll>` |
 
 #### Notice Part
 
 |No. |  Trigger Key | Element Tag|
 |:------:|:--------------:|:--------|
-|1. | `bkal` | `<bk-alert>` |
-|2. | `bkex` | `<bk-exception>` |
-|3. | `bkpo` | `<bk-popover>` |
-|4. | `bksides` | `<bk-sideslider>` |
-|5. | `bkpopc` | `<bk-popconfirm>` |
-|6. | `bkdi` | `<bk-dialog>` |
-|7. | `bkto` | `<bk-tooltip>` |
-|8. | `bkcard` | `<bk-card>` |
-|9. | `bkspin` | `<bk-spin>` |
+|1. | `bk-alert` | `<bk-alert>` |
+|2. | `bk-exception` | `<bk-exception>` |
+|3. | `bk-popover` | `<bk-popover>` |
+|4. | `bk-sideslider` | `<bk-sideslider>` |
+|5. | `bk-popconfirm` | `<bk-popconfirm>` |
+|6. | `bk-dialog` | `<bk-dialog>` |
+|7. | `bk-tooltip` | `<bk-tooltip>` |
+|8. | `bk-card` | `<bk-card>` |
+|9. | `bk-spin` | `<bk-spin>` |
 |  |  | Attribute |
-|10. | `bkvload` | `v-bkloading` |
-|11. | `bkload` | `is-loading` |
-|12. | `bktool` | `v-bk-tooltips` |
-|13. | `bktoolt` | `v-bk-tooltips="{ theme: ''}"` |
+|10. | `v-bkloading` | `v-bkloading` |
+|11. | `v-bk-tooltips` | `v-bk-tooltips` |
+|12. | `v-bk-tooltips.theme` | `v-bk-tooltips="{ theme: ''}"` |
 |  |  | Method |
-|14. | `bkinfo` | `this.$bkInfo({})` |
-|15. | `bkload` | `this.$bkLoading({})` |
-|16. | `bkme` | `this.$bkMessage({})` |
-|17. | `bkmet` | `this.$bkMessage({ theme: '' })` |
-|18. | `bkno` | `this.$bkNotify({})` |
-|17. | `bknot` | `this.$bkNotify({ theme: '' })` |
+|13. | `bkInfo` | `this.$bkInfo({})` |
+|14. | `bkLoading` | `this.$bkLoading({})` |
+|15. | `bkMessage` | `this.$bkMessage({})` |
+|16. | `bkMessage.theme` | `this.$bkMessage({ theme: '' })` |
+|17. | `bkNotify` | `this.$bkNotify({})` |
+|18. | `bkNotify.theme` | `this.$bkNotify({ theme: '' })` |
 
 
 #### Navigation Part
 
 |No. |  Trigger Key | Element Tag|
 |:------:|:--------------:|:--------|
-|1. | `bksn` | `<bk-simple-nav>` |
-|2. | `bkrl` | `<bk-resize-layout>` |
-|3. | `bktab` | `<bk-tab>` |
-|4. | `bktabp` | `<bk-tab-panel>` |
-|5. | `bkbr` | `<bk-breadcrumb>` |
-|6. | `bkbri` | `<bk-breadcrumb-item>` |
-|7. | `bkdr` | `<bk-dropdown>` |
-|8. | `bksts` | `<bk-steps>` |
-|9. | `bkprocess` | `<bk-process>` |
-|10. | `bkd` | `<bk-divider>` |
-|11. | `bkfn` | `<bk-fixed-navbar>` |
-|12. | `bkbtop` | `<bk-back-top>` |
-|13. | `bkaf` | `<bk-affix>` |
+|1. | `bk-simple-nav` | `<bk-simple-nav>` |
+|2. | `bk-resize-layout` | `<bk-resize-layout>` |
+|3. | `bk-tab` | `<bk-tab>` |
+|4. | `bk-tab-panel` | `<bk-tab-panel>` |
+|5. | `bk-breadcrumb` | `<bk-breadcrumb>` |
+|6. | `bk-breadcrumb-item` | `<bk-breadcrumb-item>` |
+|7. | `bk-dropdown` | `<bk-dropdown>` |
+|8. | `bk-steps` | `<bk-steps>` |
+|9. | `bk-process` | `<bk-process>` |
+|10. | `bk-divider` | `<bk-divider>` |
+|11. | `bk-fixed-navbar` | `<bk-fixed-navbar>` |
+|12. | `bk-back-top` | `<bk-back-top>` |
+|13. | `bk-affix` | `<bk-affix>` |
 
 ####  Directive Part
 
 |No. |  Trigger Key | Directive |
 |:------:|:--------------:|:--------|
-|1. | `bkvcos` | `v-bk-clickoutside>` |
-|2. | `bkvot` | `v-bk-overflow-tips` |
-|3. | `bkvcopy` | `v-bk-copy` |
+|1. | `v-bk-clickoutside` | `v-bk-clickoutside>` |
+|2. | `v-bk-overflow-tip` | `v-bk-overflow-tips` |
+|3. | `v-bk-copy` | `v-bk-copy` |
 
